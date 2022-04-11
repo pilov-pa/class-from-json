@@ -1,6 +1,7 @@
 {
   "name": "pilov-pa/class-from-json",
   "type": "library",
+
   "authors": [
     {
       "name": "Aleksey Pilov",

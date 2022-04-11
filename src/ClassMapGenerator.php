@@ -62,7 +62,7 @@ class ClassMapGenerator
 
         foreach ($data as $key => $value) {
             if (is_array($value)) {
-                if (is_int(key($value))) {
+                if (is_int(key($value)) || empty($value)) {
                     $cls->addField($this->processArray($key, $value, $cls));
                 } else {
                     $cls->addField($this->processObject($key, $value, $cls));

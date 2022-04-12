@@ -1,4 +1,4 @@
-# class-from-json [![Build Status](https://app.travis-ci.com/pilov-pa/class-from-json.svg?branch=main)](https://app.travis-ci.com/pilov-pa/class-from-json)
+# class-from-json [![Unit tests](https://github.com/pilov-pa/class-from-json/actions/workflows/php.yml/badge.svg)](https://github.com/pilov-pa/class-from-json/actions/workflows/php.yml)
 Needs to generate classes from json
 
 ## Basic usage

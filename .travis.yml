@@ -1,0 +1,12 @@
+os: linux
+language: php
+dist: xenial
+php:
+  - 8.1
+  - nightly
+
+before_script:
+  - composer install --no-interaction --prefer-source --dev
+  - phpenv rehash
+script:
+  - ./vendor/bin/phpunit --coverage-text

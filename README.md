@@ -1,5 +1,5 @@
 # class-from-json [![Unit tests](https://github.com/pilov-pa/class-from-json/actions/workflows/php.yml/badge.svg)](https://github.com/pilov-pa/class-from-json/actions/workflows/php.yml)
-Needs to generate classes from json
+This package is for generating class code based on json structure
 
 ## Basic usage
 

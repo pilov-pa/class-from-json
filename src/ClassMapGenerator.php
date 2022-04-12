@@ -30,7 +30,7 @@ class ClassMapGenerator
 
         $data = json_decode($json, true, 512, JSON_THROW_ON_ERROR);
 
-        $class = $this->dataToCls('Cls', $data);
+        $class = $this->dataToCls('RootClass', $data);
         $this->classMap[$class->getName()] = $class;
 
         return $this->classMap;
@@ -159,12 +159,15 @@ class ClassMapGenerator
             return false;
         }
 
-        ksort($fieldsFirst);
-        ksort($fieldsSecond);
+//        ksort($fieldsFirst);
+//        ksort($fieldsSecond);
 
-        for ($i = 0, $iMax = count($fieldsFirst); $i < $iMax; $i++) {
-            $field1 = $fieldsFirst[$i];
-            $field2 = $fieldsSecond[$i];
+        foreach($fieldsFirst as $key => $field1) {
+            if (!array_key_exists($key, $fieldsSecond)) {
+                return false;
+            }
+
+            $field2 = $fieldsSecond[$key];
 
             if ($field1->getName() !== $field2->getName()) {
                 return false;

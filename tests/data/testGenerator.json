@@ -1,0 +1,44 @@
+{
+    "test_string": "string",
+    "test_int": 559293114,
+    "test_float": 0.25,
+    "test_object": {
+        "id": 15110442724000,
+        "name": "Ozon Логистика курьеру, Москва"
+    },
+    "test_null": null,
+    "test_bool_true": true,
+    "test_bool_false": false,
+    "test_array_of_objects": [
+        {
+            "field1": "d1259",
+            "field2": 123
+        }
+    ],
+    "test_array_of_string": [
+        "test1",
+        "test2"
+    ],
+    "test_empty_array": [],
+    "test_same_name_different_content": {
+        "test_object": {
+            "field_1": 0,
+            "field_2": 0
+        },
+        "test_key": "test_value"
+    },
+    "test_same_name_same_content": {
+        "test_object": {
+            "id": 15110442724000,
+            "name": "Ozon Логистика курьеру, Москва"
+        },
+        "test_key": "test_value"
+    },
+    "test_three_levels": {
+        "level_2": {
+            "level_3": {
+                "test_key": "test_value"
+            }
+        }
+    }
+}

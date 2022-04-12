@@ -1,0 +1,49 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Test\Namesp;
+
+class TestClass
+{
+    private string $testString;
+    /**
+     * @var int[]
+    **/
+    private array $testIntArray;
+    private TestObject $testObject;
+
+    public function getTestString(): string
+    {
+        return $this->testString;
+    }
+
+    public function setTestString(string $testString): TestClass
+    {
+        $this->testString = $testString;
+        return $this;
+    }
+
+    public function getTestIntArray(): array
+    {
+        return $this->testIntArray;
+    }
+
+    public function setTestIntArray(array $testIntArray): TestClass
+    {
+        $this->testIntArray = $testIntArray;
+        return $this;
+    }
+
+    public function getTestObject(): TestObject
+    {
+        return $this->testObject;
+    }
+
+    public function setTestObject(TestObject $testObject): TestClass
+    {
+        $this->testObject = $testObject;
+        return $this;
+    }
+
+}

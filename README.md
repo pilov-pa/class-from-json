@@ -1,6 +1,8 @@
 # class-from-json
 Needs to generate classes from json
 
+## Basic usage
+
 ```php
 $generator = new \PilovPa\ClassFromJson\ClassMapGenerator();
 $renderer = new \PilovPa\ClassFromJson\ClassRenderer('8.1');

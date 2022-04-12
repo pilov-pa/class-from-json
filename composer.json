@@ -2,7 +2,7 @@
   "name": "pilov-pa/class-from-json",
   "type": "library",
   "license": "MIT",
-  "description": "Needs to generate classes from json",
+  "description": "This package is for generating class code based on json structure",
   "authors": [
     {
       "name": "Aleksey Pilov",
